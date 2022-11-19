@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <main class="row flex-row-reverse m-auto shadow bg-white px-0 rounded-3">
+      <div class="col px-0">
+        <a href="../index.html"><i class="fa-solid fa-xmark"></i></a>
+        <form
+          action="confirmRegistration.html"
+          class="row g-3 needs-validation"
+          novalidate
+        >
+          <h2 class="text-center mb-5">Register now</h2>
+          <!-- Create form username and password inputs -->
+          <div class="d-flex p-0">
+            <i class="fa-solid fa-user"></i
+            ><input
+              type="text"
+              class="form-control"
+              placeholder="Full name"
+              required
+            />
+          </div>
+          <div class="d-flex p-0">
+            <i class="fa-solid fa-circle-user"></i
+            ><input
+              type="text"
+              class="form-control"
+              placeholder="User name"
+              required
+            />
+          </div>
+          <div class="d-flex p-0">
+            <i class="fa-solid fa-envelope"></i
+            ><input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="d-flex p-0">
+            <i class="fa-solid fa-key"></i
+            ><input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <!-- Create form registration and sing-in buttons -->
+
+          <div class="d-flex p-0">
+            <div class="col text-center">
+              <button class="btn btn-primary px-3 w-100" type="submit">
+                Register
+              </button>
+            </div>
+          </div>
+
+          <div class="d-flex p-0">
+            <div class="col-5">
+              <hr />
+            </div>
+            <div class="col-2 text-center">
+              <small class="text-secondary">or</small>
+            </div>
+            <div class="col-5">
+              <hr />
+            </div>
+          </div>
+          <div class="d-flex p-0">
+            <div class="col text-center">
+              <a href="singIn.html" class="col text-center">
+                <button class="btn btn-dark px-3 w-100" type="button">
+                  Sing-in
+                </button>
+              </a>
+            </div>
+          </div>
+        </form>
+        <footer class="col text-center">
+          <a href="https://norbertbm.com/">&copy;Menyhart Media</a>
+        </footer>
+      </div>
+      <div class="col px-0">
+        <img src="../img/windows-vfOtKkhHkbE-unsplash.jpg" alt="left col img" />
+      </div>
+    </main>
+    <!-- Bootstrap JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../validation.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Confirm registration</title>
+  </head>
+  <body>
+    <mai class="row m-auto shadow bg-white px-0">
+      <a href="../index.html"><i class="fa-solid fa-xmark"></i></a>
+      <div class="col">
+        <div class="container mt-5 text-center">
+          <i class="fa-solid fa-circle-exclamation fa-10x text-warning"></i>
+          <h2 class="my-5">Confirm registration</h2>
+          <p>
+            We have send a Email containing your verification <b>code</b> to the
+            provided email address. In order to complete your registration
+            please confirm incert the verifaction code provided in the email.
+          </p>
+        </div>
+        <form action="welcome.html">
+          <div class="d-flex p-0">
+            <i class="fa-solid fa-code"></i>
+            <input
+              type="number"
+              class="form-control text-center"
+              placeholder="Validation code"
+              required
+            />
+            <button class="btn btn-success ms-2" type="submit" disabled>
+              Verify
+            </button>
+          </div>
+        </form>
+
+        <footer class="col text-center">
+          <a href="https://norbertbm.com/">&copy;Menyhart Media</a>
+        </footer>
+      </div>
+      <div class="col px-0">
+        <img src="../img/windows-vfOtKkhHkbE-unsplash.jpg" alt="left col img" />
+      </div>
+    </mai>
+    <script src="../validation.js"></script>
+    <script>
+      (function () {
+        const input = document.querySelector("input");
+        const submitBtn = document.querySelector("button");
+
+        input.onchange = () => {
+          if (input.value !== "" && input.value.length === 5) {
+            submitBtn.disabled = false;
+          } else {
+            alert("Verification code need to be 5 numbers !");
+            submitBtn.disabled = true;
+          }
+        };
+      })();
+    </script>
+  </body>
+</html>
+a {
+  text-decoration: none;
+}
+
+:root {
+  --bodyBg: #ccc;
+  --gmail: rgb(219, 68, 55);
+  --customGray: #e6d6f6;
+  --facebook: rgba(59, 89, 152);
+  --twitter: rgba(29, 161, 242);
+  --gmail: rgba(219, 68, 55);
+}
+body {
+  background-color: var(--bodyBg);
+}
+
+main {
+  position: relative;
+  width: 1000px;
+  height: 750px;
+  top: 10vh;
+}
+form {
+  width: 330px;
+  margin: auto !important;
+}
+img {
+  height: 750px;
+  width: 100%;
+}
+.fa-xmark {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.fa-xmark:hover {
+  cursor: pointer;
+  color: var(--gmail);
+}
+.fa-circle-user,
+.fa-key,
+.fa-user,
+.fa-envelope,
+.fa-code {
+  border: 1px solid var(--customGray);
+  padding: 0.5rem;
+}
+label[for="rememberMe"]:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--twitter);
+}
+.alt-logIn {
+  padding: 0.6rem;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.fa-facebook-square {
+  background-color: rgb(39, 58, 100);
+}
+.btn-facebook {
+  background-color: var(--facebook);
+  color: #fff;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.fa-twitter-square {
+  background-color: rgb(24, 127, 192);
+}
+.btn-twitter {
+  background-color: var(--twitter);
+  color: #fff;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.fa-google {
+  background-color: rgb(153, 48, 39);
+}
+.btn-gmail {
+  background-color: var(--gmail);
+  color: #fff;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+footer {
+  position: relative;
+  margin-top: 100px;
+}
+footer:hover {
+  cursor: pointer;
+  color: var(--twitter);
+}
+/* Responsive  */
+@media (max-width: 1000px) {
+  main {
+    max-width: 400px;
+  }
+  main div:nth-child(3) {
+    display: none;
+  }
+}
+(function () {
+  "use strict";
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll(".needs-validation");
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
+// Focus Icons
+const inputs = document.querySelectorAll("input");
+
+console.log(typeof inputs);
+
+Object.keys(inputs).map((key, input) => onBlurOnFocus(inputs[key]));
+
+function onBlurOnFocus(input) {
+  input.onfocus = (e) => {
+    e.target.previousElementSibling.classList.toggle("text-primary");
+  };
+  input.onblur = (e) => {
+    e.target.previousElementSibling.classList.toggle("text-primary");
+  };
+}
